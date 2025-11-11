@@ -1,7 +1,7 @@
 public class Admin extends User implements IEliminar, IPublicar {
     
-    public Admin(String correo, String password) {
-        super(correo, password);
+    public Admin() {
+        super(); // Llama al constructor vacío de User
     }
 
     @Override
@@ -13,6 +13,4 @@ public class Admin extends User implements IEliminar, IPublicar {
     public String eliminar(Contenido c) {
         return "Contenido eliminado!";
     }
-
-    
 }
